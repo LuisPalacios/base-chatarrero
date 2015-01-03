@@ -36,7 +36,7 @@ mysqlPort=${MYSQL_LINK##*:}
 
 ## Mi nombre de host
 #
-if [ -z "${MYHOSTNAME" ]; then
+if [ -z "${MYHOSTNAME}" ]; then
 	echo >&2 "error: falta la variable MYHOSTNAME"
 	exit 1
 fi
