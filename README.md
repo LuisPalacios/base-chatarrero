@@ -2,7 +2,7 @@
 
 Contenedor base para imagen con SpamAssassin, ClamAV, AmavisD-New para "limpiar" la chatarra del correo. En este repositorio encontrarás un *contenedor Docker* para montar el "Chatarrero". Estás automatizado en el Registry Hub de Docker [luispa/base-chatarrero](https://registry.hub.docker.com/u/luispa/base-chatarrero/) conectado con el proyecto GitHub [base-chatarrero](https://github.com/LuisPalacios/base-chatarrero). 
 
-Te recomiendo que eches un vistazo al proyecto [servicio-correo](https://github.com/LuisPalacios/servicio-correo) como ejemplo de uso.
+Tengo otro repositorio [servicio-correo](https://github.com/LuisPalacios/servicio-correo) donde verás un ejemplo de uso. Además te recomiendo que consultes este [apunte técnico sobre varios servicios en contenedores Docker](http://www.luispa.com/?p=172) para tener una visión más global de otros contenedores Docker y fuentes en GitHub y entender mejor este ejemplo.
 
 
 ## Ficheros
@@ -32,7 +32,7 @@ Luego puedes crear la imagen localmente con el siguiente comando
 
 ## Variables
 
-Utilizo varias variables para poder personalizar al "chatarrero", los primeros cuatro parámetros para indicar dónde y cual es la Base de Datos de los usuarios de correo de mi sistema. Esta base de datos la creo usando postfix.admin, de hecho aquí en [base-postfixadmin](https://github.com/LuisPalacios/base-postfixadmin) te dejo un contenedor para activar tu propio servicio Web para crear dicha base de datos. 
+Utilizo varias variables para poder personalizar al "chatarrero", los primeros cuatro parámetros para indicar dónde y cual es la Base de Datos de los usuarios de correo de mi sistema. Esta base de datos la creo usando postfix.admin, de hecho en [base-postfixadmin](https://github.com/LuisPalacios/base-postfixadmin) tienes un contenedor para activar tu propio servicio Web y crear dicha base de datos. 
 
     MAIL_DB_NAME:    Nombre de la BD de correo (creada con postfixadmin)
     MAIL_DB_USER:    Usuario de dicha BD
