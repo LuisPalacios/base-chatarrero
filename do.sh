@@ -204,7 +204,7 @@ use strict;
 \$interface_policy{'10024'} = 'EXT';
 \$policy_bank{'EXT'} = {
 
-  inet_acl => [qw( 127.0.0.1 172.16.0.0/12 [::1] )], # Solo acepto desde IP's de docker
+  inet_acl => [qw( 127.0.0.1 10.0.0.0/8 172.16.0.0/12 192.168.0.0/16 [::1] )], # Solo acepto desde localhost y/o direcciones intranet (tipicas docker)
   auth_required_release => 0,  # don't require secret_id for amavisd-release
   
 };
