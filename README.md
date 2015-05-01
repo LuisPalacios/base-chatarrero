@@ -62,6 +62,12 @@ Es importante que prepares un directorio persistente, en mi caso lo he dejado as
     - "/Apps/data/correo/vmail:/data/vmail"
     - "/Apps/data/correo/clamav:/var/lib/clamav"
 
+Directorio persistente para configurar el Timezone. Crear el directorio /Apps/data/tz y dentro de él crear el fichero timezone. Luego montarlo con -v o con fig.yml
+
+    Montar:
+       "/Apps/data/tz:/config/tz"  
+    Preparar: 
+       $ echo "Europe/Madrid" > /config/tz/timezone
 
 ## Troubleshooting
 
