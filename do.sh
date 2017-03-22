@@ -248,7 +248,7 @@ EOFHELPERS
 
     sed -i "s/^LogSyslog.*/LogSyslog true/g" /etc/clamav/freshclam.conf
     sed -i "s/^LogFacility.*/LogFacility LOG_MAIL/g" /etc/clamav/freshclam.conf
-    sed -i "s/^DatabaseMirror db.local.clamav.net.*/DatabaseMirror db.es.clamav.net/g" /etc/clamav/freshclam.conf
+    #sed -i "s/^DatabaseMirror db.local.clamav.net.*/DatabaseMirror db.es.clamav.net/g" /etc/clamav/freshclam.conf
 
 
 	############
